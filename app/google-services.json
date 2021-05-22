@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "789428973245",
+    "firebase_url": "https://onthecloudsocial.firebaseio.com",
+    "project_id": "onthecloudsocial",
+    "storage_bucket": "onthecloudsocial.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789428973245:android:a9f350e6874e433fa791d4",
+        "android_client_info": {
+          "package_name": "com.example.onthecloudsocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789428973245-hgge3s317ch1g2g2n9743jquv24v3nt6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.onthecloudsocial",
+            "certificate_hash": "9f620ca12eead95b091f8ff73164c4726f59456b"
+          }
+        },
+        {
+          "client_id": "789428973245-i39su8gmcopo794fj59dps9nmpbpgres.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.onthecloudsocial",
+            "certificate_hash": "1a22193bebe462507dfce313fee8831a3b7b17b6"
+          }
+        },
+        {
+          "client_id": "789428973245-l7ctsume609neenckjkk8hvmc74jsgfv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwgyIVce7VblbdUFdPr26EsJCBLiYKfq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789428973245-l7ctsume609neenckjkk8hvmc74jsgfv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

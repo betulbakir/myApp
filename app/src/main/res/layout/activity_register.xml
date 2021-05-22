@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageregister"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="60dp" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="280dp"
+            android:layout_height="460dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.24000001"
+            tools:ignore="MissingConstraints">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:alpha="0.7"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="291dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="101dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Register"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tilmailregister"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            tools:ignore="DuplicateIds">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/register_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="E-Mail"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tilpasswordregister"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/register_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="password"
+                                android:imeOptions="actionDone"
+                                android:password="true" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+            </android.support.v7.widget.CardView>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/register_create_account"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="54dp"
+                android:clickable="true"
+                android:onClick="@string/app_name"
+                app:srcCompat="@drawable/ic_check_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/alreadyregistered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="You have already registered."
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout2"
+            tools:ignore="MissingConstraints" />
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>
